@@ -6,7 +6,8 @@
 >
 > ````bash
 >   py -m venv .venv
-> .\.venv\Scripts\Activate.ps1```
+> .\.venv\Scripts\Activate.ps1
+> ```
 > ````
 
 > **Mac/Linux**:
