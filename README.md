@@ -1,17 +1,35 @@
-# frontend
+# Campus Marketplace – Frontend
 
-## Set up Virtual Environment
+## Requirements
 
-> **Windows**:
->
-> ```powershell
->   py -m venv .venv
-> .\.venv\Scripts\Activate.ps1
-> ```
+- Node.js v18+
+- Backend running locally at `http://127.0.0.1:8000`
 
-> **Mac/Linux**:
->
-> ```bash
-> py -m venv .venv
-> source .venv/bin/activate
-> ```
+## Check Node Version
+
+```bash
+node -v
+```
+
+## Setup
+
+```bash
+cd frontend
+npm install
+```
+
+Create a `.env.local` file in `frontend` with:
+
+```env
+NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+```
+
+## Run the App
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+Make sure the backend is running at `http://127.0.0.1:8000` and that `http://127.0.0.1:8000/docs` loads.
